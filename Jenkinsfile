@@ -31,8 +31,9 @@ pipeline{
             steps{
                 dir("classes"){
                     echo "Zipping Class Files"
-                    zip(zipFile:"../simpleprogram", archive:true, dir:"./", glob:"*.class")
+                    zip(zipFile:"../test.zip", archive:false, dir:"./", glob:"*.class") 
                 }
+                archiveArtifacts artifacts:"*.zip" 
             }
         }
     }
