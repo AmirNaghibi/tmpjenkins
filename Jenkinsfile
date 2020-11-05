@@ -9,7 +9,7 @@
 // options, environment, parameters, agent
 pipeline{
     options {
-        // skipDefaultCheckout()
+        skipDefaultCheckout()
         timestamps()
         timeout(time: 30, unit: 'MINUTES')
     }
