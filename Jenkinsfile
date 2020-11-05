@@ -1,10 +1,19 @@
+#!groovy​
+
 /** Simple pipeline to: 
     1. Compile java source files
     2. Extract class files into a directory
     3. Archive the class files and make them available as build artifact
 */
 
+// options, environment, parameters, agent
 pipeline{
+    options {
+        // skipDefaultCheckout()
+        timestamps()
+        timeout(time: 30, unit: MINUTES)
+    }
+
     agent any
     
     stages{
