@@ -11,7 +11,7 @@ pipeline{
     options {
         // skipDefaultCheckout()
         timestamps()
-        timeout(time: 30, unit: MINUTES)
+        timeout(time: 30, unit: 'MINUTES')
     }
 
     agent any
