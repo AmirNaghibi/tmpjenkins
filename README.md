@@ -8,7 +8,7 @@
 ## Notes
 - Use the following order for a pipeline:
   - options
-  - environment
   - parameters
+  - environment
   - agent
   
